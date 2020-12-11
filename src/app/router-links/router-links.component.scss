@@ -1,0 +1,114 @@
+// .tm-site-name-container {  }
+.tm-site-name {
+    color:white;
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.tm-site-name:hover,
+.tm-site-name:focus {
+    color: #FF720B;
+}
+.tm-header {
+    background:black;
+    height: 80px;
+    position: relative;
+    z-index: 100;
+}
+ 
+.tm-nav {
+    display: block;
+    overflow: hidden;
+}
+.tm-nav li {
+    list-style: none;
+    float: left;
+}
+.tm-nav li a {
+    color: #838383;
+    display: block;
+    padding: 45px 34px 15px 34px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.tm-nav li a.active,
+.tm-nav li a:focus,
+.tm-nav li a:hover {
+    background: #e0e0dc;
+    color: #000;
+    // text-size-adjust: 200px;
+}
+.tm-banner-inner {
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.tm-banner-title,
+.tm-banner-subtitle,
+.tm-banner-link {
+    text-transform: uppercase;
+}
+.tm-banner-title,
+.tm-banner-subtitle {
+    color: white;
+}
+.tm-banner-title {  
+    font-size: 74px;
+    font-weight: 600;
+}
+.tm-banner-subtitle { font-size: 34px; }
+.tm-banner-subtitle { font-size: 34px; }
+.tm-yellow-text { color: #FCDD44; }
+.tm-banner-link {
+    background: rgba(252, 221, 68, 0.39) none repeat scroll 0% 0%;
+    border: 1px solid #D2B731;
+    color: #FFF;
+    font-weight: 600;
+    display: inline-block;
+    padding: 18px 40px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+.tm-banner-link:hover,
+.tm-banner-link:focus {
+    background: rgba(252, 221, 68, 1);
+    color: #000;
+}
+.tm-home-section-1{
+        position: relative;
+        top: -30px;
+}
+.tm-yellow-gradient-bg {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5d11d+0,f3d10e+1,efcf1c+2,fccd0d+4,f7ca0d+5,f9cb1e+6,f7cb10+7,f8cc14+8,f0c40c+54,edc50c+55,e9c108+71,ecc008+78,e6be06+91,e9bd06+93,e8bc06+100 */
+    background: #f5d11d; /* Old browsers */ /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
+    background: linear-gradient(to bottom,  #f5d11d 0%,#f3d10e 1%,#efcf1c 2%,#fccd0d 4%,#f7ca0d 5%,#f9cb1e 6%,#f7cb10 7%,#f8cc14 8%,#f0c40c 54%,#edc50c 55%,#e9c108 71%,#ecc008 78%,#e6be06 91%,#e9bd06 93%,#e8bc06 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5d11d', endColorstr='#e8bc06',GradientType=0 ); /* IE6-9 */
+}
+.tm-green-gradient-bg {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2ec66b+0,2dc970+1,2ac96c+2,2bc76e+4,2bc869+5,2ac871+6,29c86c+7,28c76b+15,2bc76c+16,21bb61+73,1eb860+100 */
+    background: black; /* Old browsers */ /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
+    background: linear-gradient(to bottom, black 0%,black 1%,#2ac96c 2%,#2bc76e 4%,#2bc869 5%,#2ac871 6%,#29c86c 7%,#28c76b 15%,#2bc76c 16%,#21bb61 73%,#1eb860 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ec66b', endColorstr='#1eb860',GradientType=0 ); /* IE6-9 */
+}
+.tm-red-gradient-bg {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e97262+0,ef6865+1,ed6c5f+2,f07162+4,f17062+5,eb6f67+6,ec6c5f+7,ec6b5e+18,eb5d4f+56,e95242+100 */
+    background: #e97262; /* Old browsers */ /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
+    background: linear-gradient(to bottom,  #e97262 0%,#ef6865 1%,#ed6c5f 2%,#f07162 4%,#f17062 5%,#eb6f67 6%,#ec6c5f 7%,#ec6b5e 18%,#eb5d4f 56%,#e95242 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e97262', endColorstr='#e95242',GradientType=0 ); /* IE6-9 */
+}

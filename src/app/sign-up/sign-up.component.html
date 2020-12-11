@@ -1,0 +1,88 @@
+<html>
+    <head> 
+    <title>
+    Registration Page
+    </title>
+    </head>
+    <body>
+       
+    <br>
+    <br>
+    <form (submit)="Templedrive(form.value)" #form="ngForm">
+        <div class="form-group row">
+
+            <!-- <label for="firstName" class="col-2 col-form-label" style="font-size: large; color: black;">Firstname</label> -->
+            
+            <div class="container">
+                
+                    <h1>Registration Page</h1>
+                
+               <h3 style="position:relative; left:500px; top:40px;">Firstname:</h3> <input type="text" class="form-control" id="firstName"
+                ngModel name="firstName" placeholder="Enter firstName" #firstName="ngModel" required>
+                 <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
+                    firstName is required.</div> <br>
+
+          
+            <!-- <label for="lastname" class="col-2 col-form-label" style="font-size: large; color: black;">Lastname</label> -->
+           
+            <h3 style="position:relative; left:500px; top:40px;">Lastname:</h3>  <input type="text" class="form-control" id="lastname"
+                ngModel name="lastname" placeholder="Enter lastname" #lastname="ngModel" required>
+                 <div class="alert alert-danger" *ngIf="lastname.touched && !lastname.valid">
+                    lastname is required.</div> <br>
+                    
+                    
+                    <!-- <label for="email" class="col-2 col-form-label" style="font-size: large; color: black;">Email</label> -->
+                    
+                    <h3 style="position:relative; left:500px; top:40px;">Email:</h3>  <input type="email" class="form-control" id="email"
+                        ngModel name="email" placeholder="Enter email" #email="ngModel" required>
+                         <div class="alert alert-danger" *ngIf="email.touched && !email.valid">
+                            email is required.</div> <br>
+                            
+                           
+                            <!-- <label for="phoneno" class="col-2 col-form-label" style="font-size: large; color: black; ">Phoneno.</label> -->
+                           
+                            <h3 style="position:relative; left:500px; top:40px;">Phone.no:</h3> <input type="number" class="form-control" id="phoneno"
+                                ngModel name="phoneno" placeholder="Enter phoneno" #phoneno="ngModel" required>
+                                 <div class="alert alert-danger" *ngIf="phoneno.touched && !phoneno.valid">
+                                    phoneno. is required.</div> <br>
+                                    
+                                   
+                                    <!-- <label for="address" class="col-2 col-form-label" style="font-size: large; color: black;">Address</label> -->
+                            
+                                    <h3 style="position:relative; left:500px; top:40px;">Address:</h3> <input type="text" class="form-control" id="address"
+                                ngModel name="phoneno" placeholder="Enter address" #address="ngModel" required>
+                                 <div class="alert alert-danger" *ngIf="address.touched && !address.valid">
+                                    address. is required.</div> <br>
+                                    
+                                   
+                                      <!-- <label for="createpassword" class="col-2 col-form-label" style="font-size: large; color: black;">Createpassword</label> -->
+                                    
+                                      <h3 style="position:relative; left:500px; top:40px;">Createpassword:</h3><input type="password" class="form-control" id="createpassword"
+                                        ngModel name="createpassword" placeholder="createpassword" #createpassword="ngModel" required>
+                                         <div class="alert alert-danger" *ngIf="createpassword.touched && !createpassword.valid">
+                                            createpassword is required.</div> <br>
+                                            
+                                            
+                                            <!-- <label for="retypepassword" class="col-2 col-form-label" style="font-size: large; color: black;">Retypepassword</label> -->
+                                            
+                                            <h3 style="position:relative; left:500px; top:40px;">Retypepassword:</h3><input type="password" class="form-control" id="retypepassword"
+                                                ngModel name="retypepassword" placeholder="retypepassword" #retypepassword="ngModel" required>
+                                                 <div class="alert alert-danger" *ngIf="retypepassword.touched && !retypepassword.valid">
+                                                    retypepassword is required.</div> <br>
+                                                    <button class="btn btn-danger" >
+                                                        submit 
+                                                    </button>&nbsp;&nbsp;
+                                                    <button class="btn btn-danger" (click)="login()">
+
+                                                        login
+                                                    </button><br>
+                                                    </div>
+                                                    
+            
+</div>
+<!-- <button type="submit" class="btn btn-primary offset-2 col-1">Submit</button>
+<button type="submit" (click)=login() class="btn btn-primary offset-2 col-1">Login</button> -->
+
+</form>
+</body>
+</html>

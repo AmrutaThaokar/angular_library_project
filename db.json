@@ -1,0 +1,84 @@
+{
+  "Users": [
+    {
+      "id": "002",
+      "Book_title": "Kurukku",
+      "Book_auther": "Faustina Bama",
+      "NumberOfBooks": "33"
+    },
+    {
+      "id": "003",
+      "Book_title": "Shah Nama",
+      "Book_auther": "Firdausi",
+      "NumberOfBooks": "25"
+    },
+    {
+      "id": "004",
+      "Book_title": "The Castle",
+      "Book_auther": "Franz Kalka",
+      "NumberOfBooks": "23"
+    },
+    {
+      "id": "005",
+      "Book_title": "Apple Cart",
+      "Book_auther": "G. B. Shaw",
+      "NumberOfBooks": "13"
+    },
+    {
+      "id": "006",
+      "Book_title": "Man and Superman",
+      "Book_auther": "G. B. Shaw",
+      "NumberOfBooks": "15"
+    },
+    {
+      "id": "007",
+      "Book_title": "A Woman’s Life",
+      "Book_auther": "Guy de Maupassaut",
+      "NumberOfBooks": "9"
+    },
+    {
+      "id": "008",
+      "Book_title": "Time Machine",
+      "Book_auther": "H.G. Wells",
+      "NumberOfBooks": "21"
+    },
+    {
+      "id": "009",
+      "Book_title": "Invisible Man",
+      "Book_auther": "H.G.Wells",
+      "NumberOfBooks": "8"
+    },
+    {
+      "id": "010",
+      "Book_title": "Shape of things to come",
+      "Book_auther": "G. B. Shaw",
+      "NumberOfBooks": "11"
+    },
+    {
+      "id": "011",
+      "Book_title": "The Vegetarian",
+      "Book_auther": "Han Kang",
+      "NumberOfBooks": "10"
+    },
+    {
+      "id": "001",
+      "Book_title": "Kurukku",
+      "Book_auther": "Faustina Bama",
+      "NumberOfBooks": "33"
+    }
+  ],
+  "credential": [
+    {
+      "id": 4,
+      "username": "Ashu",
+      "password": "ash",
+      "loginAs": "member"
+    },
+    {
+      "id": 5,
+      "username": "Rama",
+      "password": "123rh",
+      "loginAs": "librarian"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<html>
+  <div class="box">
+  <button type="button" class="btn btn-danger" (click)="logout()">Log-off</button>
+</div>
+    <div class='container'>
+ <h1>Availabel Books</h1>
+ <form>
+    <input class="form-control" type="text" name="Book_title" [(ngModel)]="Book_title"
+    (ngModelChange)="Search()" placeholder="Enter Book title to search">
+    <!-- <button>Search<i class="fas fa-serch"></i></button> -->
+    <!-- <img class="imbBx" src="./assets/searchicon.png"> -->
+</form>
+ <table class="table table-bordered">
+   <thead>
+     <tr>
+       <th style = "font-size: 30px;">Book_id</th>
+       <th style = "font-size: 30px;">Book_title</th>
+       <th style = "font-size: 30px;">Book_auther</th>
+       <th style = "font-size: 30px;">NumberOfBooks</th>
+       <th style = "font-size: 30px;">Actions</th>
+     </tr>
+   </thead>
+      <tbody>
+     <tr *ngFor= "let user of users">
+       <td style = "font-size: 20px;">{{user.id}}</td>
+       <td style = "font-size: 20px;">{{user.Book_title}}</td>
+       <td style = "font-size: 20px;">{{user.Book_auther}}</td>
+       <td style = "font-size: 20px;">{{user.NumberOfBooks}}</td>
+       <!-- <td style = "font-size: 20px;">{{user.Actions}}</td> -->
+       <td>
+           <button type="button" class="btn btn-primary" (click)="deleteRow(user.id)">Delete</button>&nbsp;&nbsp;
+           <button type="button" class="btn btn-danger" (click)="update(user.id)">Update</button>&nbsp;&nbsp;
+           <button type="button" class="btn btn-danger" (click)="add(user)">Add</button>
+           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" (click)="getData(user)">Get Book Details</button>
+          </td>
+     </tr>
+   </tbody>   
+ </table>
+ <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Book_id : {{id}}</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <p> Author : {{Book_auther}}</p>
+            <p> Title : {{Book_title}}</p>
+            <p > NumberOfBooks : {{NumberOfBooks}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+ </html>

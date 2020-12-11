@@ -1,0 +1,60 @@
+// body {
+  
+//   //text-align: center;
+  
+//  }
+//  p{
+//   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+//   font-size: xx-large;
+//   text-align: center;
+//   }
+//   input,select{
+//       width: 500px,;
+//       text-align: center;
+      
+//   }
+//  .col-10{
+//    text-align: center;
+//  }
+body{
+  background:url('/assets/sign.jpg');
+  background-size: 100% 100%;
+}
+ .container{  
+  width: 300vw;
+  height: 200vh; 
+  
+  background-repeat: no-repeat;
+  position: relative;
+     }
+     input[type=text], input[type=email],input[type=number],input[type=password],select {
+      width: 50%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #777774;
+      position:relative;
+        left:500px; 
+        top:40px; 
+        font-style:initial ; 
+    }
+    h1{
+      text-align: center;
+      color: cornflowerblue;
+      font-size:50px ;
+      font-weight: 600;
+letter-spacing: 1px;
+    }
+    button{
+ width: 30%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background:firebrick;
+position:relative;
+  left:500px; 
+  top:40px; 
+  font-style:initial ; 
+    }
